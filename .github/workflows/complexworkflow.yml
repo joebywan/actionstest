@@ -8,6 +8,8 @@ jobs:
         run: |
           echo date
           "echo $(date)"
+          date
+          echo $(date)
   job2Windows:
     runs-on: windows-latest
     steps:
