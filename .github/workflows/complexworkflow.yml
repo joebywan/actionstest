@@ -1,0 +1,25 @@
+name: complexWorkflowChallenge
+on: push
+jobs:
+  job1Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print date
+        run: echo date
+  job2Windows:
+    runs-on: windows-latest
+    steps:
+      - name: print date
+        run: echo date
+  job3MacOS:
+    runs-on: macos-12
+    steps:
+      - name: print date
+        run: echo date
+  job4Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print date
+        run: echo date
+    needs:
+      [job1Ubuntu,job2Windows,job3MacOS]
