@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 #    - name: print date
-    - run: echo date
+    - run: date
   job2Windows:
     runs-on: windows-latest
     steps:
