@@ -4,8 +4,8 @@ jobs:
   job1Ubuntu:
     runs-on: ubuntu-latest
     steps:
-#    - name: print date
-    - run: date
+      - name: print date
+        run: echo test
   job2Windows:
     runs-on: windows-latest
     steps:
